@@ -1,0 +1,62 @@
+@import 'layout';
+
+body{
+    background-image: url(images/bg-desktop.svg), linear-gradient( hsl(257, 40%, 49%), hsl(257, 40%, 49%));
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width:500px){
+        background-image: url(images/bg-mobile.svg), linear-gradient( hsl(257, 40%, 49%), hsl(257, 40%, 49%));
+    }
+
+}
+
+.main{
+    color: #fff;
+
+    &__heading{
+        font-family: 'Poppins', sans-serif;
+        font-size: 3rem;
+        line-height: 1.5;
+    }
+    &__paragraph{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+    &__button{
+        font-family: 'Open Sans', sans-serif;
+        background-color: #fff;
+        border: 0;
+        width: 15rem;
+        height: 5rem;
+        border-radius: 15rem;
+        color: hsl(257, 40%, 49%);
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: all .2s;
+        box-shadow: 0 3px 3rem rgba(#000000, .5);
+
+        @media (max-width:1080px){
+            justify-self: center;
+        }
+
+        &:hover{
+            background-color: hsl(300, 69%, 71%);
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+}
+
+.footer{
+    &__logo-box--icon{
+        cursor: pointer;
+        box-sizing: content-box;
+        padding: 3px;
+        border: #fff 1px solid;
+        border-radius: 100%;
+    }
+}
+
